@@ -1,0 +1,356 @@
+/* line 3, ../../sass/units/index.scss */
+.profile-wrap {
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 6, ../../sass/units/index.scss */
+.profile-wrap .col-left {
+  width: 25%;
+  position: relative;
+  vertical-align: top;
+  float: left;
+}
+/* line 11, ../../sass/units/index.scss */
+.profile-wrap .col-left::before {
+  content: '';
+  display: block;
+  position: relative;
+  padding-top: 100%;
+}
+/* line 17, ../../sass/units/index.scss */
+.profile-wrap .col-left .avatar {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 28, ../../sass/units/index.scss */
+.profile-wrap .col-right {
+  width: 75%;
+  vertical-align: top;
+  float: left;
+}
+/* line 33, ../../sass/units/index.scss */
+.profile-wrap .col-right::before {
+  content: '';
+  display: block;
+  position: relative;
+  padding-top: 16.67%;
+  margin-top: -1.2em;
+}
+/* line 41, ../../sass/units/index.scss */
+.profile-wrap .dashboard-block {
+  display: block;
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  line-height: 2;
+}
+/* line 47, ../../sass/units/index.scss */
+.profile-wrap .dashboard-block b {
+  display: block;
+  white-space: nowrap;
+  font-size: 14px;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 54, ../../sass/units/index.scss */
+.profile-wrap .dashboard-block span {
+  color: #999;
+  display: block;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 1.2;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 64, ../../sass/units/index.scss */
+.profile-wrap .intro {
+  clear: both;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 14px;
+  padding: 0.8em 1em;
+}
+
+/* line 73, ../../sass/units/index.scss */
+.photo-list {
+  padding-bottom: 45px;
+}
+
+/* line 77, ../../sass/units/index.scss */
+.photo-item {
+  position: relative;
+  width: 33.3%;
+  float: left;
+  background-color: #eee;
+  z-index: 0;
+  cursor: pointer;
+  background: url("https://dummyimage.com/1080x1080/ddd/fff") top center no-repeat #eee;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+/* line 86, ../../sass/units/index.scss */
+.photo-item:nth-child(3n+2) {
+  z-index: 1;
+}
+/* line 88, ../../sass/units/index.scss */
+.photo-item:nth-child(3n+2)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  right: -1px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+/* line 100, ../../sass/units/index.scss */
+.photo-item::before {
+  content: '';
+  display: block;
+  position: relative;
+  padding-top: 100%;
+  border-bottom: 2px solid white;
+}
+/* line 107, ../../sass/units/index.scss */
+.photo-item .photo-head {
+  display: none;
+}
+/* line 110, ../../sass/units/index.scss */
+.photo-item .photo-content {
+  display: none;
+}
+/* line 113, ../../sass/units/index.scss */
+.photo-item > a:first-child {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* line 124, ../../sass/units/index.scss */
+.is-zoomin #header, .is-zoomin .profile-wrap {
+  display: none;
+}
+/* line 127, ../../sass/units/index.scss */
+.is-zoomin .photo-list {
+  padding-top: 90px;
+  -webkit-transition: padding 0.2s ease;
+  -o-transition: padding 0.2s ease;
+  transition: padding 0.2s ease;
+}
+/* line 130, ../../sass/units/index.scss */
+.is-scrolled .is-zoomin .photo-list {
+  padding-top: 45px;
+}
+/* line 134, ../../sass/units/index.scss */
+.is-zoomin .photo-item:not(.is-active) {
+  display: none;
+}
+/* line 137, ../../sass/units/index.scss */
+.is-zoomin .photo-item.is-active {
+  width: 100%;
+  background-color: #369;
+  pointer-events: none;
+}
+/* line 141, ../../sass/units/index.scss */
+.is-zoomin .photo-item.is-active::after {
+  content: none;
+  border: 0;
+  left: 0;
+  right: 0;
+}
+/* line 147, ../../sass/units/index.scss */
+.is-zoomin .photo-item.is-active .photo-head {
+  display: block;
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  pointer-events: auto;
+}
+/* line 157, ../../sass/units/index.scss */
+.is-zoomin .photo-item.is-active .photo-content {
+  display: block;
+  background-color: white;
+}
+
+/* line 163, ../../sass/units/index.scss */
+.photo-head-top {
+  height: 45px;
+  line-height: 44px;
+  padding-left: 0.6em;
+  border-bottom: 1px solid #f0f0f0;
+  overflow: hidden;
+  -webkit-transition: margin 0.2s ease;
+  -o-transition: margin 0.2s ease;
+  transition: margin 0.2s ease;
+}
+/* line 170, ../../sass/units/index.scss */
+.is-scrolled .photo-head-top {
+  margin-top: -45px;
+}
+/* line 174, ../../sass/units/index.scss */
+.photo-head-top i.fa {
+  font-size: 0.8em;
+  padding-left: 0.5em;
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+/* line 181, ../../sass/units/index.scss */
+.photo-head-bottom {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 0.6em;
+}
+/* line 185, ../../sass/units/index.scss */
+.photo-head-bottom i.fa {
+  float: right;
+  height: 44px;
+  line-height: 44px;
+  width: 44px;
+  text-align: center;
+  cursor: pointer;
+  color: #999;
+}
+/* line 194, ../../sass/units/index.scss */
+.photo-head-bottom .avatar {
+  display: inline-block;
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 203, ../../sass/units/index.scss */
+.photo-head-bottom .info {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 8px;
+  line-height: 16px;
+  padding-left: 4px;
+  font-size: 11px;
+}
+/* line 210, ../../sass/units/index.scss */
+.photo-head-bottom .info b {
+  font-size: 13px;
+  font-weight: bold;
+}
+/* line 215, ../../sass/units/index.scss */
+.photo-head-bottom .account, .photo-head-bottom .place {
+  display: block;
+}
+
+/* line 219, ../../sass/units/index.scss */
+.photo-content-top {
+  height: 45px;
+  line-height: 44px;
+  padding-left: 0.4em;
+  border-bottom: 1px solid #f0f0f0;
+  color: #999;
+  pointer-events: auto;
+}
+/* line 226, ../../sass/units/index.scss */
+.photo-content-top a {
+  display: inline-block;
+  vertical-align: top;
+  color: #999;
+}
+/* line 230, ../../sass/units/index.scss */
+.photo-content-top a:active {
+  color: black;
+  animation: beat 0.3s linear;
+  -moz-animation: beat 0.3s linear;
+  -webkit-animation: beat 0.3s linear;
+}
+/* line 237, ../../sass/units/index.scss */
+.photo-content-top i.fa {
+  width: 40px;
+  text-align: center;
+}
+/* line 241, ../../sass/units/index.scss */
+.photo-content-top i.fa-comment-o {
+  -moz-transform: scale3d(-1, 1.1, 1);
+  -ms-transform: scale3d(-1, 1.1, 1);
+  -webkit-transform: scale3d(-1, 1.1, 1);
+  transform: scale3d(-1, 1.1, 1);
+  vertical-align: -5%;
+}
+/* line 245, ../../sass/units/index.scss */
+.photo-content-top .icon-like i.fa-heart {
+  color: #f66;
+}
+
+/* line 249, ../../sass/units/index.scss */
+.photo-content-main {
+  line-height: 1.6;
+  font-size: 14px;
+  padding: 1em;
+}
+
+/* line 254, ../../sass/units/index.scss */
+.wholikes {
+  font-size: 13px;
+  padding-bottom: 0.3em;
+}
+/* line 257, ../../sass/units/index.scss */
+.wholikes i {
+  margin-right: 0.2em;
+  -moz-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  -webkit-transform: scale(0.75);
+  transform: scale(0.75);
+}
+/* line 261, ../../sass/units/index.scss */
+.wholikes b {
+  font-weight: bold;
+}
+
+/* line 266, ../../sass/units/index.scss */
+.hashtag {
+  color: #369;
+  display: inline-block;
+  padding-right: 4px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+/* line 272, ../../sass/units/index.scss */
+.hashtag:link, .hashtag:hover, .hashtag:visited {
+  color: #369;
+}
+/* line 275, ../../sass/units/index.scss */
+.hashtag:active {
+  color: #69c;
+}
+
+/* line 280, ../../sass/units/index.scss */
+.date {
+  font-size: 11px;
+  color: #ccc;
+}
+
+/*# sourceMappingURL=index.css.map */

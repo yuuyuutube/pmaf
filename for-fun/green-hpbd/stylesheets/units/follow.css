@@ -1,0 +1,90 @@
+/* line 2, ../../sass/units/follow.scss */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 8, ../../sass/units/follow.scss */
+.follow-list {
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+
+/* line 12, ../../sass/units/follow.scss */
+.follow-item {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 0.6em;
+}
+/* line 16, ../../sass/units/follow.scss */
+.follow-item i.fa {
+  float: right;
+  height: 44px;
+  line-height: 44px;
+  width: 44px;
+  text-align: center;
+  cursor: pointer;
+  color: #999;
+}
+/* line 25, ../../sass/units/follow.scss */
+.follow-item .avatar {
+  display: inline-block;
+  margin-top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 34, ../../sass/units/follow.scss */
+.follow-item .info {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 8px;
+  line-height: 16px;
+  padding-left: 4px;
+  font-size: 11px;
+}
+/* line 41, ../../sass/units/follow.scss */
+.follow-item .info b {
+  font-size: 13px;
+  font-weight: bold;
+}
+/* line 46, ../../sass/units/follow.scss */
+.follow-item .account, .follow-item .nickname {
+  display: block;
+}
+/* line 49, ../../sass/units/follow.scss */
+.follow-item .nickname {
+  color: #999;
+}
+
+/* line 53, ../../sass/units/follow.scss */
+.btn-follow {
+  font-size: 13px;
+  line-height: 1.8;
+  display: inline-block;
+  float: right;
+  margin-top: 8px;
+  margin-right: 15px;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  border: 1px solid #ddd;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 64, ../../sass/units/follow.scss */
+.btn-follow:active {
+  border: 1px solid #999;
+}
+/* line 67, ../../sass/units/follow.scss */
+.btn-follow:link, .btn-follow:hover, .btn-follow:visited {
+  color: black;
+}
+
+/*# sourceMappingURL=follow.css.map */

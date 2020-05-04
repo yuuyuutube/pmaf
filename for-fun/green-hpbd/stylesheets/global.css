@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(//fonts.googleapis.com/earlyaccess/cwtexhei.css);
+/* line 39, ../sass/vendors/_extend.scss */
+.style-sansserif {
+  font-family: "Helvetica Neue", Helvetica, Arial, Chinese, "微軟正黑體", sans-serif;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 8, ../sass/global.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 29, ../sass/global.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, ../sass/global.scss */
+body {
+  line-height: 1;
+}
+
+/* line 36, ../sass/global.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 39, ../sass/global.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, ../sass/global.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, ../sass/global.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Chinese';
+  unicode-range: U+4E00-9FFF;
+  src: local(Noto Sans T Chinese), local(Lantinghei TC), local(LiHei Pro), local(微軟正黑體);
+}
+/* line 4, ../sass/vendors/_basic.scss */
+body {
+  position: relative;
+  min-height: 100%;
+  font-size: 16px;
+  font-family: 'Arial','微軟正黑體','Microsoft JhengHei';
+}
+
+/* line 10, ../sass/vendors/_basic.scss */
+input {
+  font-family: 'Arial','微軟正黑體','Microsoft JhengHei';
+}
+
+/* line 16, ../sass/vendors/_basic.scss */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 21, ../sass/vendors/_basic.scss */
+*:before, *:after {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 29, ../sass/vendors/_basic.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 32, ../sass/vendors/_basic.scss */
+a, a:link, a:hover, a:active, a:visited {
+  color: black;
+}
+
+/* line 36, ../sass/vendors/_basic.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 41, ../sass/vendors/_basic.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 1, ../sass/layouts/_view.scss */
+::-moz-selection, ::selection {
+  /* Code for Firefox */
+}
+
+/* line 3, ../sass/layouts/_view.scss */
+html, body, .layout-container {
+  height: 100%;
+}
+
+/* line 18, ../sass/layouts/_view.scss */
+.layout-view {
+  min-height: 100%;
+}
+
+/* line 26, ../sass/layouts/_view.scss */
+.col-left, .col-right {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+/* line 31, ../sass/layouts/_view.scss */
+.col-left:last-child, .col-right:last-child {
+  margin-left: -5px;
+}
+@media (max-width: 1024px) {
+  /* line 31, ../sass/layouts/_view.scss */
+  .col-left:last-child, .col-right:last-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 26, ../sass/layouts/_view.scss */
+  .col-left, .col-right {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* line 43, ../sass/layouts/_view.scss */
+a.nornal-link {
+  text-decoration: underline;
+}
+
+/* line 49, ../sass/layouts/_view.scss */
+.align-center {
+  text-align: center;
+}
+
+@media (min-width: 1024.1px) {
+  /* line 53, ../sass/layouts/_view.scss */
+  .on-mobile {
+    display: none !important;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 58, ../sass/layouts/_view.scss */
+  .on-desk {
+    display: none !important;
+  }
+}
+/* line 63, ../sass/layouts/_view.scss */
+.fa-ellipsis-v:before {
+  margin-top: 2px;
+  display: inline-block;
+}
+
+/* line 68, ../sass/layouts/_view.scss */
+.avatar {
+  background-image: url("../images/img-default-avatar.png");
+  background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 2, ../sass/layouts/_header.scss */
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 44px;
+  padding-left: 0.6em;
+  background-color: white;
+  z-index: 9;
+  font-weight: bold;
+  border-bottom: 1px solid #f0f0f0;
+}
+/* line 15, ../sass/layouts/_header.scss */
+#header b {
+  display: inline-block;
+  max-width: calc( 100% - 45px);
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 19, ../sass/layouts/_header.scss */
+#header b i.fa {
+  font-size: 0.8em;
+  padding-left: 0.5em;
+  padding-right: 1em;
+  cursor: pointer;
+  font-weight: normal;
+}
+/* line 27, ../sass/layouts/_header.scss */
+#header i.fa-ellipsis-v {
+  float: right;
+  height: 44px;
+  line-height: 44px;
+  width: 44px;
+  text-align: center;
+  background-color: white;
+  color: #999;
+}
+
+/* line 2, ../sass/layouts/_footer.scss */
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 44px;
+  font-size: 19px;
+  background-color: white;
+  border-top: 1px solid #f0f0f0;
+  z-index: 9;
+}
+/* line 14, ../sass/layouts/_footer.scss */
+#footer a, #footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 17, ../sass/layouts/_footer.scss */
+#footer i.fa {
+  display: inline-block;
+  margin-left: -5px;
+  width: 20%;
+  color: #ccc;
+  text-align: center;
+}
+/* line 23, ../sass/layouts/_footer.scss */
+#footer i.fa.is-active {
+  color: black;
+}
+
+@keyframes beat {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  25% {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  50% {
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  75% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes beat {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  25% {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  50% {
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  75% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=global.css.map */
