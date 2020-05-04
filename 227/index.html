@@ -1,0 +1,152 @@
+<!-- 解謎完成版本 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--
+//Scripted by wife of best-DNA-in-Kanto-region
+//累了嗎?聽首歌吧: http://www.nicovideo.jp/watch/sm19847331
+-->
+<html lang="zh-TW">
+	<head>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style>
+		</style>
+		<title>PMAF SPECIAL PAGE</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56981329-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body>
+		<div id="cd" class="before227"><p id="dd">000</p><p id="hh">00</p><p id="minmin">00</p><p id="ss">00</p></div>
+		<div class="congratulations"><div class="congraInner"><div class="congraInnerText">
+		<p>太好了！<br/>你成功解開了邪惡組織聯合陣線的密碼，找到了他們試圖奪走藏起來的東西。對訓練家們來說，這是非常非常重要的寶物，菁英訓練家委員會非常感謝你的協助！<br/>
+		這真是值得慶祝的一刻，但是現在還不是時候，<br/>請一起等到那個日子到來，我們再見面吧！</p>
+		</div><div class="tri"></div></div></div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><!-- Jquery Must Use The Lastest Verson -->
+
+		<script type="text/javascript">
+			//15影格
+		var cdspeed = 80; 
+		// $("#cd").delay(800).queue(function(next){$(this).removeClass().addClass("cdframe2");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe3");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe4");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe5");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe6");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe7");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe8");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe9");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe10");next();})
+		// 		.delay(cdspeed*5).queue(function(next){$(this).removeClass().addClass("cdframe5");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe6");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe7");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe8");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe9");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe10");next();})
+		// 		.delay(cdspeed*5).queue(function(next){$(this).removeClass().addClass("cdframe5");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe6");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe7");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe8");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe9");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe10");next();})
+		// 		.delay(cdspeed*5).queue(function(next){$(this).removeClass().addClass("cdframe11");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe12");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe13");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe14");next();})
+		// 		.delay(cdspeed).queue(function(next){$(this).removeClass().addClass("cdframe15");$("html").animate({opacity:0},1500);next();})
+				// .delay(2000).queue(function(next){location.href = "../";next();});
+			//倒數
+			function countdown(){
+				var d=new Date();
+				var day=d.getDate();
+				var month=d.getMonth() + 1;
+				var year=d.getFullYear();
+				var hour=d.getHours();
+				var min=d.getMinutes();
+				var sec=d.getSeconds();
+				var ms=d.getMilliseconds();
+			var utchd = Date.UTC(2015,2,27,0,0,0,0);
+			var utcd = Date.UTC(year,month,day,hour,min,sec,ms);
+			var countutc= (utchd-utcd)/1000;
+
+				cday=Math.floor(countutc/86400);
+				chour=Math.floor( (countutc - cday*86400) / 3600 );
+				cmin=Math.floor ( (countutc - cday*86400 - chour*3600) /60);	
+				csec=Math.floor ( countutc %60 );
+				cms=Math.floor ((countutc%1)*100);
+				
+				if (countutc >0)
+				{
+					$("#dd").text(threedigit(cday));
+					$("#hh").text(twodigit(chour));
+					$("#minmin").text(twodigit(cmin));
+					$("#ss").text(twodigit(csec));
+					$( "#cd p" ).css("color", "white" );
+				}
+				
+				if (countutc <=0)
+				{
+					$("#dd").text("000");
+					$("#hh").text("00");
+					$("#minmin").text("00");
+					$("#ss").text("00");
+					$( "#cd p" ).css("color", "white" );
+				}
+				
+			}
+			function twodigit(x){
+				var retval = x;
+				if (retval < 10)
+				{
+					return ("0" + retval.toString());
+				}
+				else
+				{
+					return retval.toString();
+				}
+			}
+			function threedigit(x){
+				var retval = x;
+				if ( retval < 100 &&  retval > 9)
+				{
+					return ("0" + retval.toString());
+				}
+				else
+				if (retval < 10)
+				{
+					return ("00" + retval.toString());
+				}
+				else
+				{
+					return retval.toString();
+				}
+			}
+			setInterval("countdown();",100);
+			
+			$(".congraInner").click(function(){
+			$( ".congratulations" ).css("display", "none" );
+			});
+			//調整高度至置中
+			var sheight=window.innerHeight;
+			sheight = parseInt(sheight);
+			var hh=(sheight - 435 )/2 ;
+			var th=(sheight - 300 )/2 ;
+			$( "#cd" ).css("top", hh );
+			$( ".congratulations" ).css("top", th );
+			window.onresize = function() {
+			sheight=window.innerHeight;
+			sheight = parseInt(sheight);
+			hh=(sheight - 435 )/2 ;
+			th=(sheight - 300 )/2 ;
+			$( "#cd" ).css("top", hh );
+			$( ".congratulations" ).css("top", th );
+			};
+		</script>
+	</body>
+</html>

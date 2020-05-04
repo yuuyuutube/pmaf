@@ -1,0 +1,212 @@
+@font-face {
+  font-family: CaviarDreams;
+  src: url(../CaviarDreams.ttf);
+}
+		
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html{
+	position:relative;
+	height:100%;
+}
+body{
+	position:relative;
+	height:100%;
+	width:100%;
+	font-family: CaviarDreams,"�L�n������",STHeiti,monospace;
+	background: url(../bg.gif) 0 0 repeat transparent;
+	overflow:hidden;
+	min-width:435px;
+	min-height:600px;
+}
+
+#cd{
+	position:relative;
+	width:435px;
+	height:600px;
+	margin:0 auto;
+	background-image: url(../ball15.png);
+	top:15%;
+}
+#cd.before227{
+	background-image: url(../cd.png);	
+	height:420px;
+}
+.cdframe1{
+	background-position: 0 0;
+}
+.cdframe2{
+	background-position: -435px 0;
+}
+.cdframe3{
+	background-position: -870px 0;
+}
+.cdframe4{
+	background-position: -1305px 0;
+}
+.cdframe5{
+	background-position: -1740px 0;
+}
+.cdframe6{
+	background-position: -2175px 0;
+}
+.cdframe7{
+	background-position: -2610px 0;
+}
+.cdframe8{
+	background-position: -3045px 0;
+}
+.cdframe9{
+	background-position: -3480px 0;
+}
+.cdframe10{
+	background-position: -3915px 0;
+}
+.cdframe11{
+	background-position: -4350px 0;
+}
+.cdframe12{
+	background-position: -4785px 0;
+}
+.cdframe13{
+	background-position: -5220px 0;
+}
+.cdframe14{
+	background-position: -5655px 0;
+}
+.cdframe15{
+	background-position: -6090px 0;
+}													
+p{
+	position:absolute;
+	font-family: CaviarDreams;
+	color:#333;
+}
+#dd{
+	top:180px;
+	left:104px;
+	font-size: 70px;
+	letter-spacing:33px;
+}
+#hh{
+	top:263px;
+	left:95px;
+	font-size: 40px;
+	letter-spacing:10px;
+}
+#minmin{
+	top:263px;
+	left:171px;
+	font-size: 40px;
+	letter-spacing:10px;
+}
+#ss{
+	top:263px;
+	left:247px;
+	font-size: 40px;
+	letter-spacing:10px;
+}
+.congratulations{
+	position:fixed;
+	top:0;
+	height:300px;
+	width:100%;
+	z-index:8;
+	font-size:20px;
+	line-height:36px;
+	color:#333;
+}
+.congraInner{
+	cursor:pointer;
+	position: relative;
+	height:100%;
+	width:600px;
+	margin:0 auto;
+	background-color:rgba(255, 255, 255, 0.8);
+	border: 5px solid #888;
+	-moz-border-radius: 20px; /* Firefox */
+	-webkit-border-radius: 20px; /* Safari, Chrome */
+	-khtml-border-radius: 20px; /* Konqueror */
+	border-radius: 20px; /* Opera 10.50 and later (CSS3 standard) */
+	-webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding:8px;
+}
+.congraInnerText{
+	width:100%;
+	height:100%;
+	margin-top:-2px;
+	margin-left:-2px;
+	border: 2px solid #888;
+	-moz-border-radius: 15px; /* Firefox */
+	-webkit-border-radius: 15px; /* Safari, Chrome */
+	-khtml-border-radius: 15px; /* Konqueror */
+	border-radius: 15px; /* Opera 10.50 and later (CSS3 standard) */
+	background: url(../bg-serif.png) right bottom no-repeat;
+}
+.congraInnerText p{
+	font-family: "�L�n������",STHeiti,monospace;
+	padding:20px 30px;
+	}
+.tri{
+	position:absolute;
+	width: 0;
+	height: 0;
+	right:50px;
+	bottom:30px;
+	border-style: solid;
+	border-width:20px 20px 0 20px;
+	border-color:#333 transparent transparent transparent ;
+}
