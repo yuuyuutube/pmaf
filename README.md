@@ -1,1 +1,3 @@
-# pmaf
+---
+permalink: /index.html
+---
