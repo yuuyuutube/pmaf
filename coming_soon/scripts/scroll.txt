@@ -1,0 +1,55 @@
+						<div id="newsscroll_up">上</div>
+						<div id="newsscroll_track"><div id="newsscroll_bar"></div></div>
+						<div id="newsscroll_down">下</div>
+
+//讀取三個高度
+var news_h = $("#news").css("height");
+var newswrapper_h = $("#newswrapper").css("height");
+var track_h = $("#newsscroll_track").css("height");
+//設bar大小
+var bar_h = parseInt(news_h) * parseInt(news_h) / parseInt(newswrapper_h);
+$( "#newsscroll_bar" ).css("height", parseInt(bar_h) );
+//新聞與軌道個別可移動的空間
+var track_distance = parseInt(track_h) - parseInt(bar_h);
+var news_distance = parseInt(newswrapper_h) - parseInt(news_h);
+
+
+//卷軸跟內容跑-暫時用內容的scrollTop測
+$( "#news_left" ).scroll(function(){
+	var newsval=$(this).scrollTop();
+	var scroll_per = parseInt(newsval) / parseInt(news_distance) ;
+	var bar_goto = scroll_per * track_distance ;
+	$("#fix div").html( parseInt(newsval) + ","+ scroll_per + "," + parseInt(bar_goto));
+	$( "#newsscroll_bar" ).css("top", parseInt(bar_goto) +"px");
+});
+
+//內容跟卷軸跑
+	//卷軸跟滑鼠跑
+var dragging = false;
+var iX, iY;
+$("#newsscroll_bar").mousedown(function(e) {
+	dragging = true;
+	iY = e.clientY - this.offsetTop;
+	this.setCapture && this.setCapture();
+	return false;
+});
+document.onmousemove = function(e) {
+	if (dragging) {
+	var e = e || window.event;
+	var oY = e.clientY - iY;
+	var ymax = parseInt(track_distance);
+	if (oY > ymax )	{oY = ymax };
+	if (oY < 0 )	{oY = 0 };
+	var go_per = oY / ymax;
+	var news_goto = parseInt(news_distance) * go_per * (-1) ;
+	$("#newsscroll_bar").css({"top":oY + "px"});
+	$("#newswrapper").css({"margin-top":news_goto + "px"});
+	$("#fix div").html( "oY" + parseInt(oY) );
+	return false;
+	}
+};
+$(document).mouseup(function(e) {
+	dragging = false;
+	$("#newsscroll_bar")[0].releaseCapture();
+	e.cancelBubble = true;
+})
